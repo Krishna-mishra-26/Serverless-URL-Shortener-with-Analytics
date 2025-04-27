@@ -98,7 +98,7 @@ url-shortener-project/
 ├── server.js             # Main entry point
 ├── package.json
 ├── .env                  # Environment variables
-└── README.md
+README.md
 ```
 
 ## API Endpoints
