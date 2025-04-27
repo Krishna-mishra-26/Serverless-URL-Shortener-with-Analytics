@@ -3,7 +3,9 @@
 
 A feature-rich URL shortening service with advanced analytics capabilities, built with Node.js, Express, MongoDB, and vanilla JavaScript.
 
-![URL Shortener Screenshot](https://via.placeholder.com/800x450.png?text=URL+Shortener+Screenshot)
+![HomePage-Index.html](https://github.com/user-attachments/assets/1104c221-56c7-47e5-b2fb-ad03c6900473)
+![HomePage-Index.html](https://github.com/user-attachments/assets/4a29a537-c2a4-4305-9d7e-628e4e9df309)
+
 
 ## Features
 
