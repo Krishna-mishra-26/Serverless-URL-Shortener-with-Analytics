@@ -3,8 +3,7 @@
 
 A feature-rich URL shortening service with advanced analytics capabilities, built with Node.js, Express, MongoDB, and vanilla JavaScript.
 
-![HomePage-Index.html](https://github.com/user-attachments/assets/1104c221-56c7-47e5-b2fb-ad03c6900473)
-![HomePage-Index.html](https://github.com/user-attachments/assets/4a29a537-c2a4-4305-9d7e-628e4e9df309)
+
 
 
 ## Features
@@ -19,6 +18,20 @@ A feature-rich URL shortening service with advanced analytics capabilities, buil
   - Analyze device types accessing your links
   - Identify referrer sources
   - Export analytics data as CSV
+- **Real-time Click Tracking**: Monitor link performance with detailed metrics
+- **Mobile-Responsive Design**: Works seamlessly on desktop and mobile devices
+
+
+
+## **Sample Screenshots:**
+<img src="https://github.com/user-attachments/assets/1104c221-56c7-47e5-b2fb-ad03c6900473" alt="HomePage-Index.html" height="500"/>
+
+<img src="https://github.com/user-attachments/assets/4a29a537-c2a4-4305-9d7e-628e4e9df309" alt="HomePage-Index.html" height="500" width="400"/>
+
+
+- URL Shortening Interface with QR code generation
+- Analytics Dashboard with interactive charts
+- Password-protected link access
 
 ## Tech Stack
 
@@ -121,17 +134,34 @@ README.md
 
 ## Deployment
 
-This application is designed to be deployed on DigitalOcean or similar cloud providers.
+This application requires server-side capabilities and cannot be deployed on static hosting platforms like GitHub Pages.
 
-### DigitalOcean Deployment Steps
+### Recommended Deployment Platforms
 
+**DigitalOcean (Recommended)**
 1. Create a DigitalOcean droplet with Node.js
 2. Clone the repository to your droplet
 3. Install dependencies: `npm install`
 4. Install PM2: `npm install -g pm2`
-5. Set up environment variables
+5. Set up environment variables (update BASE_URL to your server's IP)
 6. Start the application with PM2: `pm2 start server.js`
 7. Set up a domain name and configure nginx (optional)
+
+**Alternative Platforms:**
+- **Render.com** - Free tier available, easy GitHub integration
+- **Vercel** - Serverless deployment with good Node.js support
+- **Heroku** - Popular platform with MongoDB add-ons
+- **Railway** - Simple deployment with automatic HTTPS
+
+### Important Configuration Note
+⚠️ **For production deployment**: Update your `.env` file's `BASE_URL` from `http://localhost:5000` to your server's public IP address or domain name. Otherwise, shortened URLs won't work for external users.
+
+Example:
+```
+BASE_URL=http://your-server-ip:5000
+# OR
+BASE_URL=https://yourdomain.com
+```
 
 ## Future Enhancements
 
@@ -153,3 +183,11 @@ This application is designed to be deployed on DigitalOcean or similar cloud pro
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+
+- [Chart.js](https://www.chartjs.org/) for the analytics visualizations
+- [QRCode](https://www.npmjs.com/package/qrcode) for QR code generation
+- [MongoDB](https://www.mongodb.com/) for reliable database solutions
+- [Express.js](https://expressjs.com/) for the robust web framework
+
